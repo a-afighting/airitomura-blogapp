@@ -1,0 +1,18 @@
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.2.0/gems/cgi-0.5.0/ext/cgi/escape
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+creating Makefile
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.2.0/gems/cgi-0.5.0/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20251114-98032-8vhnbk sitelibdir\=./.gem.20251114-98032-8vhnbk clean
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.2.0/gems/cgi-0.5.0/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20251114-98032-8vhnbk sitelibdir\=./.gem.20251114-98032-8vhnbk
+compiling escape.c
+linking shared-object cgi/escape.so
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.2.0/gems/cgi-0.5.0/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20251114-98032-8vhnbk sitelibdir\=./.gem.20251114-98032-8vhnbk install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20251114-98032-8vhnbk/cgi
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.2.0/gems/cgi-0.5.0/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20251114-98032-8vhnbk sitelibdir\=./.gem.20251114-98032-8vhnbk clean
