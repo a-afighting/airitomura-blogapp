@@ -1,0 +1,19 @@
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.3.0/gems/erb-6.0.0/ext/erb/escape
+/home/airitomura/.rbenv/versions/3.3.2/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.3.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251115-344503-qeuk1b sitelibdir\=./.gem.20251115-344503-qeuk1b clean
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.3.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251115-344503-qeuk1b sitelibdir\=./.gem.20251115-344503-qeuk1b
+compiling escape.c
+linking shared-object erb/escape.so
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.3.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251115-344503-qeuk1b sitelibdir\=./.gem.20251115-344503-qeuk1b install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20251115-344503-qeuk1b/erb
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.3.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251115-344503-qeuk1b sitelibdir\=./.gem.20251115-344503-qeuk1b clean

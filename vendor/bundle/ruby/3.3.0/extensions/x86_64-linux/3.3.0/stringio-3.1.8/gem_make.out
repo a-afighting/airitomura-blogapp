@@ -1,0 +1,19 @@
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.8/ext/stringio
+/home/airitomura/.rbenv/versions/3.3.2/bin/ruby extconf.rb
+checking for rb_io_mode_t in ruby/io.h... no
+creating Makefile
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.8/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251115-344503-aciifg sitelibdir\=./.gem.20251115-344503-aciifg clean
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.8/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251115-344503-aciifg sitelibdir\=./.gem.20251115-344503-aciifg
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.8/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251115-344503-aciifg sitelibdir\=./.gem.20251115-344503-aciifg install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20251115-344503-aciifg
+
+current directory: /home/airitomura/airitomura-blogapp/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.8/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251115-344503-aciifg sitelibdir\=./.gem.20251115-344503-aciifg clean

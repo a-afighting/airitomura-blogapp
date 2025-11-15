@@ -1,9 +1,7 @@
 class HomeController < ApplicationController
     def index
-        @article = Article.first
+        #@article = Article.first
+        #render 'home/index'
     end
 
-    def about
-        @about = 'about'
-    end
 end
