@@ -8,9 +8,13 @@ $avatar-size: 32px;
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 
+  &_tittle {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
   &_heart {
     display: flex;
-
     img {
       width: $heart-size;
       height: $heart-size;
