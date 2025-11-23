@@ -3,10 +3,15 @@
 # Table name: articles
 #
 #  id         :integer          not null, primary key
-#  content    :text
-#  tittle     :string
+#  content    :text             not null
+#  tittle     :string           not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  user_id    :integer          not null
+#
+# Indexes
+#
+#  index_articles_on_user_id  (user_id)
 #
 class Article < ApplicationRecord
     validates :tittle, presence:true
@@ -19,10 +24,15 @@ class Article < ApplicationRecord
 
     validate :validate_tittle_and_content_length
 
+    belongs_to :user, dependent: :destroy
+
     def display_created_at
         I18n.l(self.created_at, format: :default)
     end
 
+    def author_name
+        user.display_name
+    end
     private
     def validate_tittle_and_content_length
         char_count = self.tittle.length + self.content.length
