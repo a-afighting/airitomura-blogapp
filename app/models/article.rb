@@ -10,10 +10,24 @@
 #
 class Article < ApplicationRecord
     validates :tittle, presence:true
+    validates :tittle, length: { minimum: 2, maximum: 100}
+    validates :tittle, format:  { with: /\A(?!\@)/}
+
     validates :content, presence:true
+    validates :content, length:{ minimum: 10}
+    validates :content, uniqueness: true
+
+    validate :validate_tittle_and_content_length
 
     def display_created_at
         I18n.l(self.created_at, format: :default)
     end
 
+    private
+    def validate_tittle_and_content_length
+        char_count = self.tittle.length + self.content.length
+        unless char_count > 100
+            errors.add(:content, '100文字以上で書いてください')
+        end
+    end
 end
