@@ -14,6 +14,9 @@
 #  index_articles_on_user_id  (user_id)
 #
 class Article < ApplicationRecord
+
+    has_one_attached :eyecatch
+
     validates :tittle, presence:true
     validates :tittle, length: { minimum: 2, maximum: 100}
     validates :tittle, format:  { with: /\A(?!\@)/}
@@ -25,6 +28,7 @@ class Article < ApplicationRecord
     validate :validate_tittle_and_content_length
 
     has_many :comments, dependent: :destroy
+    has_many :likes, dependent: :destroy
     belongs_to :user, dependent: :destroy
 
     def display_created_at
@@ -34,6 +38,11 @@ class Article < ApplicationRecord
     def author_name
         user.display_name
     end
+
+    def like_count
+        likes.count
+    end
+
     private
     def validate_tittle_and_content_length
         char_count = self.tittle.length + self.content.length

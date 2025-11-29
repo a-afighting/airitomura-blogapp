@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   root to: 'articles#index' #特に指定がなければindexを表示（get~の代わりになる）
   resources :articles do
     resources :comments, only: [:new, :create]
+    resource :like, only: [:create, :destroy]
   end
 
   resource :profile, only:[:show, :edit, :update]
+  resources :favorites, only:[:index]
 end
