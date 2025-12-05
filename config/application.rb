@@ -6,19 +6,16 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 
 
-if Rails.env.development? || Rails.env.test?
-  Bundler.require(*Rails.groups)
-  Dotenv::Railtie.load
-end
-
 
 module AiritomuraBlogapp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.2
 
-    Bundler.require(*Rails.groups)
-    Dotenv::Railtie.load
+    if Rails.env.development? || Rails.env.test?
+      Bundler.require(*Rails.groups)
+      Dotenv::Railtie.load
+    end
 
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
