@@ -1,16 +1,26 @@
 require_relative 'boot'
 
 require 'rails/all'
+require 'devise'
+require 'sprockets/railtie'
+
+
+require 'devise'
+require 'sprockets/railtie'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 
+
 Bundler.require(*Rails.groups)
+
+
 
 module AiritomuraBlogapp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.2
+
 
   if Rails.env.development? || Rails.env.test?
     Bundler.require(*Rails.groups)
