@@ -1,6 +1,9 @@
 require_relative 'boot'
 
 require 'rails/all'
+require 'devise'
+require 'sprockets/railtie'
+
 
 require 'devise'
 require 'sprockets/railtie'
