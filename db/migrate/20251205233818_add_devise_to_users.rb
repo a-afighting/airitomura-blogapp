@@ -9,12 +9,14 @@ class AddDeviseToUsers < ActiveRecord::Migration[7.2]
 
       ## Recoverable
       ## Recoverable
-    t.string   :reset_password_token unless column_exists?(:users, :reset_password_token)
-    t.datetime :reset_password_sent_at unless column_exists?(:users, :reset_password_sent_at)
+      t.string   :reset_password_token unless column_exists?(:users, :reset_password_token)
+      t.datetime :reset_password_sent_at unless column_exists?(:users, :reset_password_sent_at)
 
 
       ## Rememberable
-      t.datetime :remember_created_at
+      ## Rememberable
+      t.datetime :remember_created_at unless column_exists?(:users, :remember_created_at)
+
 
       ## Trackable
       # t.integer  :sign_in_count, default: 0, null: false
