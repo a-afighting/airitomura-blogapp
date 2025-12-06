@@ -8,8 +8,10 @@ class AddDeviseToUsers < ActiveRecord::Migration[7.2]
       t.string :encrypted_password, null: false, default: "" unless column_exists?(:users, :encrypted_password)
 
       ## Recoverable
-      t.string   :reset_password_token
-      t.datetime :reset_password_sent_at
+      ## Recoverable
+    t.string   :reset_password_token unless column_exists?(:users, :reset_password_token)
+    t.datetime :reset_password_sent_at unless column_exists?(:users, :reset_password_sent_at)
+
 
       ## Rememberable
       t.datetime :remember_created_at
